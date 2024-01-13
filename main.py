@@ -73,7 +73,6 @@ def chinese(number:int|float)->str:
                 content+=NUMBER[0] #处理0的读法
         content=content.rstrip(NUMBER[0])
         container.append(content)
-    print(container)
     for i in range(len(container)):
         result+=container[i]
         if container[i]!=NUMBER[0]:
