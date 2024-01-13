@@ -90,6 +90,7 @@ def chinese(number:int|float)->str:
         result=result+"点"+"".join(decimal)
     return result
 
+#以下为测试部分
 print(
     chinese(2345),
     chinese(4005),
