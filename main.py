@@ -82,8 +82,10 @@ def chinese(number:int|float)->str:
     #空字符串直接返回“零”
     if not result and n%1==0:
         return NUMBER[0]
+    #负数处理
     if n<0:
         result="负"+result
+    #小数处理
     if n%1!=0:
         decimal=map(lambda arg:NUMBER[int(arg)],list(str(n).split(".")[1]))
         decimal=list(decimal)
